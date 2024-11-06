@@ -1,0 +1,10 @@
+@mixin set-font-color($color) {
+    color: $color;
+}
+
+@function tint-color($c, $w) {
+    @return mix(#fff, $c, $w);
+}
+@function shade-color($c, $w) {
+    @return mix(#000, $c, $w);
+}
