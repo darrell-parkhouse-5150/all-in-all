@@ -1,0 +1,6 @@
+@import "partials/vars";
+@import "partials/mixins";
+
+.test {
+    @include set-font-color(red)
+}
