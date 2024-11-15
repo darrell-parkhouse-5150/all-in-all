@@ -13,3 +13,7 @@
 @mixin set-font-color($c) {
     color: $c;
 }
+
+@mixin set-bg-color($c) {
+    background-color: $c;
+}
