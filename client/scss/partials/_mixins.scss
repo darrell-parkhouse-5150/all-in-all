@@ -1,3 +1,15 @@
 @mixin border($color) {
     border: 1px solid $color;
 }
+
+@mixin padding($value) {
+    padding: $value * 1px
+}
+
+@mixin set-font-weight($w) {
+    font-weight: $w;
+}
+
+@mixin set-font-color($c) {
+    color: $c;
+}
