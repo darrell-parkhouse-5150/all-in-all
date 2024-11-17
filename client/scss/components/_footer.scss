@@ -1,0 +1,8 @@
+@import "../partials/vars";
+@import "../partials/mixins";
+footer {
+    .top {
+        @include padding(20);
+        @include border($clr-base-border);
+    }
+}
