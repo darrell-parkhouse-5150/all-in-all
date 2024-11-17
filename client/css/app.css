@@ -3,6 +3,11 @@
   margin: 0 auto;
 }
 
+footer .top {
+  padding: 20px;
+  border: 1px solid #CCD5DE;
+}
+
 .main-menu {
   display: flex;
   background-color: #0071dc;
