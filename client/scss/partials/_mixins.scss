@@ -17,3 +17,7 @@
 @mixin set-bg-color($c) {
     background-color: $c;
 }
+
+@function px-to-rem($px) {
+    @return calc($px / 16) * 1rem;
+}
