@@ -1,3 +1,5 @@
+@import "mixins";
+
 $clr-base-border: #CCD5DE;
 $base-font: "Outfit", sans-serif;
 $clr-smart-phone-bg: #d7dcd6;
@@ -8,3 +10,19 @@ $clr-air-buds-bg: #d8f5e0;
 $clr-tv-bg: #fff3d9;
 $clr-appliances-bg: #d4dfe2;
 $clr-main-menu-bg: #0071dc;
+
+$font-size-base: px-to-rem(14);
+$line-height-base: 1.5;
+$input-btn-padding-y: .375rem;
+$input-btn-padding-x: .75rem;
+$input-btn-font-family: null;
+$input-btn-font-size: $font-size-base;
+
+$focus-ring-width: .25rem !default;
+$focus-ring-opacity: .25 !default;
+$focus-ring-color: rgba($primary, $focus-ring-opacity) !default;
+$focus-ring-blur: 0 !default;
+$focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width $focus-ring-color !default;
+
+$input-btn-focus-width: $focus-ring-width;
+$input-btn-focus-color-opacity: $focus-ring-opacity;
