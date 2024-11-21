@@ -1,0 +1,15 @@
+@import "../partials/vars";
+
+header {
+    .top-bar {
+        background-color: $clr-base-border;
+    }
+    .main-menu {
+        display: flex;
+        background-color: $clr-main-menu-bg;
+    }
+    .category-menu {
+        background-color: $clr-base-border;
+        
+    }
+}
