@@ -2,7 +2,15 @@
 @import "../partials/mixins";
 footer {
     .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
         @include padding(20);
         @include border($clr-base-border);
+    }
+
+    .bottom {
+        @include set-bg-color(#fff);
     }
 }
