@@ -1,14 +1,32 @@
+*, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container {
   width: 1170px;
   margin: 0 auto;
 }
 
 footer .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
   border: 1px solid #CCD5DE;
 }
+footer .bottom {
+  background-color: #fff;
+}
 
-.main-menu {
+header .top-bar {
+  background-color: #CCD5DE;
+}
+header .main-menu {
   display: flex;
   background-color: #0071dc;
+}
+header .category-menu {
+  background-color: #CCD5DE;
 }
