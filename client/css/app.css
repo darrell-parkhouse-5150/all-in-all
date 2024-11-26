@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Outfit", sans-serif;
+}
+
 .container {
   width: 1170px;
   margin: 0 auto;
@@ -22,11 +26,43 @@ footer .bottom {
 
 header .top-bar {
   background-color: #CCD5DE;
+  font-size: 0.875rem;
+}
+header .top-bar .language {
+  color: #0d0d0d;
+}
+header .top-bar .currency {
+  color: #0d0d0d;
+}
+header .top-bar .text {
+  color: #0d0d0d;
 }
 header .main-menu {
   display: flex;
   background-color: #0071dc;
 }
 header .category-menu {
+  padding: 20px;
   background-color: #CCD5DE;
+}
+header .category-menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.chevron-down-icon {
+  background: url("../img/icons/chevron-down-icon.svg");
+  width: 9px;
+  height: 5px;
+}
+
+.airbud-icons {
+  background: url("../img/icons/airbuds-icon.svg") no-repeat;
+  width: 50px;
+  height: 45px;
 }
