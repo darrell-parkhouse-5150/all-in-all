@@ -5,6 +5,8 @@ header {
     .top-bar {
         @include set-bg-color($clr-base-border);
         @include set-font-size(14);
+        
+        padding: 6px;
 
         display: flex;
         justify-content: space-between;
@@ -12,10 +14,20 @@ header {
         .language {
             color: tint-color($clr-dark-bg, 5%);
             display: flex;
+
+            .icon {
+                margin-top: 8px;
+                margin-left: 6px;
+            }
         }
         .currency {
             color: tint-color($clr-dark-bg, 5%);
             display: flex;
+
+            .icon {
+                margin-top: 8px;
+                margin-left: 6px;
+            }
         }
         .text {
             color: tint-color($clr-dark-bg, 5%);
