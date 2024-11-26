@@ -27,14 +27,38 @@ footer .bottom {
 header .top-bar {
   background-color: #CCD5DE;
   font-size: 0.875rem;
+  padding: 6px;
+  display: flex;
+  justify-content: space-between;
 }
 header .top-bar .language {
   color: #0d0d0d;
+  display: flex;
+}
+header .top-bar .language .icon {
+  margin-top: 8px;
+  margin-left: 6px;
 }
 header .top-bar .currency {
   color: #0d0d0d;
+  display: flex;
+}
+header .top-bar .currency .icon {
+  margin-top: 8px;
+  margin-left: 6px;
 }
 header .top-bar .text {
+  color: #0d0d0d;
+  text-transform: capitalize;
+}
+header .top-bar .primary ul {
+  display: flex;
+  list-style: none;
+  column-gap: 20px;
+}
+header .top-bar .primary a {
+  text-decoration: none;
+  text-transform: capitalize;
   color: #0d0d0d;
 }
 header .main-menu {
