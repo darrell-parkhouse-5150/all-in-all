@@ -54,7 +54,9 @@ header {
     }
     .category-menu {
         padding: 20px;
-        background-color: $clr-base-border;
+
+        @include set-bg-color($clr-base-border);
+        
         ul {
             display: flex;
             flex-direction: row;
