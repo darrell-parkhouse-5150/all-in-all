@@ -1,15 +1,56 @@
 @import "../partials/vars";
+@import "../partials/mixins";
 
 header {
     .top-bar {
-        background-color: $clr-base-border;
+        @include set-bg-color($clr-base-border);
+        @include set-font-size(14);
+
+        display: flex;
+        justify-content: space-between;
+
+        .language {
+            color: tint-color($clr-dark-bg, 5%);
+            display: flex;
+        }
+        .currency {
+            color: tint-color($clr-dark-bg, 5%);
+            display: flex;
+        }
+        .text {
+            color: tint-color($clr-dark-bg, 5%);
+            text-transform: capitalize;
+        }
+
+        .primary {
+            ul {
+                display: flex;
+                list-style: none;
+                column-gap: 20px;
+            }
+
+            a {
+                text-decoration: none;
+                text-transform: capitalize;
+                @include set-font-color(tint-color($clr-dark-bg, 5%));
+            }
+        }
     }
     .main-menu {
         display: flex;
         background-color: $clr-main-menu-bg;
     }
     .category-menu {
+        padding: 20px;
         background-color: $clr-base-border;
-        
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
     }
 }
