@@ -14,10 +14,18 @@
     color: $c;
 }
 
+@mixin set-font-size($size) {
+    font-size: px-to-rem($size);
+}
+
 @mixin set-bg-color($c) {
     background-color: $c;
 }
 
 @function px-to-rem($px) {
     @return calc($px / 16) * 1rem;
+}
+
+@function tint-color($c, $w) {
+    @return mix($clr-light-bg, $c, $w);
 }
